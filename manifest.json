@@ -1,0 +1,24 @@
+{
+  "name": "KEEPTEEN MINI - Meshtastic 2.7.15",
+  "version": "2.7.15",
+  "new_version_url": "version.json",
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "bin/bootloader.bin",
+          "offset": 0
+        },
+        {
+          "path": "bin/partitions.bin",
+          "offset": 32768
+        },
+        {
+          "path": "bin/firmware.bin",
+          "offset": 65536
+        }
+      ]
+    }
+  ]
+}
