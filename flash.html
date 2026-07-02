@@ -41,6 +41,16 @@
       cursor: pointer;
     }
     esp-web-install-button::part(button):hover { opacity: 0.9; }
+    .meta {
+      margin: 0 0 20px;
+      padding: 10px 12px;
+      border-radius: 6px;
+      background: #f0fdfa;
+      color: #115e59;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .meta strong { display: block; color: #0f172a; font-size: 14px; }
     .footer { margin-top: 16px; font-size: 12px; color: var(--muted); text-align: center; }
   </style>
 </head>
@@ -52,9 +62,13 @@
     <h1>KEEPTEEN MINI</h1>
     <p class="sub">Firmware Flasher</p>
     <div class="card">
+      <div class="meta">
+        <strong>Meshtastic 2.7.15.d18f3f7</strong>
+        Build date: 2026-07-02
+      </div>
       <label for="firmware">Firmware</label>
       <select id="firmware">
-        <option value="manifest.json">Meshtastic 2.7.15</option>
+        <option value="manifest.json">Meshtastic 2.7.15.d18f3f7 - 2026-07-02</option>
       </select>
       <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
       <div class="footer">
