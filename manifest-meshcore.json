@@ -1,6 +1,6 @@
 {
   "name": "KEEPTEEN MESHMINI - MeshCore v1.15.0 Bluetooth Companion Radio Type-C Powered",
-  "version": "1.15.0-keepteen-mini-ble-typec-20260711",
+  "version": "1.15.0-keepteen-meshmini-ble-typec-20260711",
   "builds": [
     {
       "chipFamily": "ESP32-C3",

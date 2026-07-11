@@ -8,6 +8,7 @@ Build date: 2026-07-02
 
 MeshCore v1.15.0
 Mode: Bluetooth companion radio
+Device model: KEEPTEEN MESHMINI
 Package date: 2026-07-11
 Source revision: 910b1be
 Bluetooth name: MeshCore-<node name>
