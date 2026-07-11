@@ -20,7 +20,7 @@ Mode: USB companion radio
 Device model: KEEPTEEN MESHMINI
 Package date: 2026-07-11
 Source revision: 910b1be
-Connection: MeshCore mobile APP USB tab with Android OTG
+Connection: PC serial / experimental. Android APP may not detect ESP32-C3 USB Serial/JTAG.
 Power: Type-C powered, reports 4200 mV / 100% battery
 ```
 
@@ -44,6 +44,6 @@ and are declared in `manifest-meshcore-usb.json`. Do not mix the bootloader,
 partition table, or firmware files between manifests.
 
 The MeshCore BLE companion firmware advertises over Bluetooth Low Energy for the
-MeshCore mobile client. The MeshCore USB companion firmware appears as a USB
-serial device for the MeshCore mobile APP USB tab or a desktop serial client.
-Neither firmware is a USB mass-storage drive.
+MeshCore mobile client. The MeshCore USB companion firmware uses ESP32-C3 USB
+Serial/JTAG, which can work as a PC serial port but may not be detected by the
+Android MeshCore APP USB tab. Neither firmware is a USB mass-storage drive.
