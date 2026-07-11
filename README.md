@@ -1,6 +1,6 @@
-# KEEPTEEN MINI Flasher
+# KEEPTEEN MESHMINI Flasher
 
-The web flasher offers two firmware families for KEEPTEEN MINI:
+The web flasher offers two firmware families for KEEPTEEN MESHMINI:
 
 ```text
 Meshtastic 2.7.15.d18f3f7
@@ -8,10 +8,11 @@ Build date: 2026-07-02
 
 MeshCore v1.15.0
 Mode: Bluetooth companion radio
-Build date: 2026-04-19
+Package date: 2026-07-11
 Source revision: 910b1be
 Bluetooth name: MeshCore-<node name>
 Pairing code: 123456
+Power: Type-C powered, reports 4200 mV / 100% battery
 ```
 
 Open:
