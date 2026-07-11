@@ -1,0 +1,23 @@
+{
+  "name": "KEEPTEEN MINI - MeshCore USB Companion Radio",
+  "version": "keepteen-mini-companion-usb",
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "bin/meshcore/bootloader.bin",
+          "offset": 0
+        },
+        {
+          "path": "bin/meshcore/partitions.bin",
+          "offset": 32768
+        },
+        {
+          "path": "bin/meshcore/firmware.bin",
+          "offset": 65536
+        }
+      ]
+    }
+  ]
+}

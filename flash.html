@@ -63,18 +63,33 @@
     <p class="sub">Firmware Flasher</p>
     <div class="card">
       <div class="meta">
-        <strong>Meshtastic 2.7.15.d18f3f7</strong>
-        Build date: 2026-07-02
+        <strong id="firmware-name">Meshtastic 2.7.15.d18f3f7</strong>
+        <span id="firmware-details">Build date: 2026-07-02</span>
       </div>
       <label for="firmware">Firmware</label>
       <select id="firmware">
-        <option value="manifest.json">Meshtastic 2.7.15.d18f3f7 - 2026-07-02</option>
+        <option value="manifest.json" data-name="Meshtastic 2.7.15.d18f3f7" data-details="Build date: 2026-07-02">Meshtastic 2.7.15.d18f3f7</option>
+        <option value="manifest-meshcore.json" data-name="MeshCore" data-details="KEEPTEEN MINI · USB companion radio">MeshCore · USB companion radio</option>
       </select>
       <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
       <div class="footer">
-        Chrome or Edge &mdash; Connect via Type-C
+        Chrome or Edge &mdash; Connect via Type-C<br>
+        Flashing replaces the firmware currently installed on the device.
       </div>
     </div>
   </div>
+  <script>
+    const firmware = document.getElementById('firmware');
+    const installer = document.querySelector('esp-web-install-button');
+    const firmwareName = document.getElementById('firmware-name');
+    const firmwareDetails = document.getElementById('firmware-details');
+
+    firmware.addEventListener('change', () => {
+      const choice = firmware.options[firmware.selectedIndex];
+      installer.setAttribute('manifest', choice.value);
+      firmwareName.textContent = choice.dataset.name;
+      firmwareDetails.textContent = choice.dataset.details;
+    });
+  </script>
 </body>
 </html>
