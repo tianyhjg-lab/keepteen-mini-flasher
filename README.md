@@ -6,8 +6,12 @@ The web flasher offers two firmware families for KEEPTEEN MINI:
 Meshtastic 2.7.15.d18f3f7
 Build date: 2026-07-02
 
-MeshCore
-Mode: USB companion radio
+MeshCore v1.15.0
+Mode: Bluetooth companion radio
+Build date: 2026-04-19
+Source revision: 910b1be
+Bluetooth name: MeshCore-<node name>
+Pairing code: 123456
 ```
 
 Open:
@@ -27,3 +31,6 @@ Flash layout:
 MeshCore files are kept separately under `bin/meshcore/` and are declared in
 `manifest-meshcore.json`. Do not mix the bootloader, partition table, or
 firmware files between the two manifests.
+
+The MeshCore companion firmware advertises over Bluetooth Low Energy for the
+MeshCore mobile client. It is not a USB mass-storage drive.
